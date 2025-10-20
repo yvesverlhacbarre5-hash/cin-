@@ -1,0 +1,17 @@
+{
+    "yves": {
+        "password": "yvesvb",
+        "age": 29,
+        "sold": 6
+    },
+    "eri": {
+        "password": "eri",
+        "age": 1,
+        "sold": 10
+    },
+    "mira": {
+        "password": "mira",
+        "age": 1,
+        "sold": 10
+    }
+}

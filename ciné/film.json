@@ -1,0 +1,12 @@
+{
+    "harry potter":{
+        "prix":11,
+        "duré":"2H30",
+        "age min":6
+    },
+     "saw 3":{
+        "prix":11,
+        "duré":"2h30",
+        "age min":18
+        }
+    }
