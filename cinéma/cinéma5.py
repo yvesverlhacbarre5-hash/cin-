@@ -7,7 +7,7 @@ with open("film.json","r") as f:
 
 
 while True:
-    conexion_inscription = input("connexion ou inscription ?")
+    conexion_inscription = input("connexion ou inscription ? ")
     conexion_inscription = conexion_inscription.lower().strip()
 
     if conexion_inscription == "inscription" :
@@ -19,12 +19,12 @@ while True:
          sold =int(input("de combien voulez-vous crediter votre compte ? "))
          client[pseudo] ={"password":password,"age":age,"sold":sold}
          print("votre compte a bien été enregistré")
-         with open("exo//cinéma//client.json","w") as f:
+         with open("client.json","w") as f:
             json.dump(client,f,indent=4)
          break
         else:
             print("pseudo deja utiliser")
-    if conexion_inscription == "connexion":
+    elif conexion_inscription == "connexion":
         break
     else:
         print("je n'est pas compris votre réponce essayer a nouveau")
@@ -73,7 +73,6 @@ while True:
                         client[new_pseudo] = client[pseudo]
                         del client[pseudo]
                         pseudo = new_pseudo
-                        print(client) 
                         break
             if film_modif == 2:
                 new_password = input("nouveau mots de passe ?")
@@ -84,6 +83,7 @@ while True:
             if film_modif == 4:
                 crediter = int(input("de combien voulez-vous créditer ?"))
                 client[pseudo]["sold"] = client[pseudo]["sold"] + crediter
+                print("votre sold est de {}$ ".format(client[pseudo]["sold"]))
             if film_modif == 5:
                 with open("client.json","w") as f:
                     json.dump(client,f,indent=4)

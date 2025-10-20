@@ -2,7 +2,7 @@
     "yves": {
         "password": "yvesvb",
         "age": 29,
-        "sold": 6
+        "sold": 20
     },
     "eri": {
         "password": "eri",
@@ -12,6 +12,11 @@
     "mira": {
         "password": "mira",
         "age": 1,
+        "sold": 10
+    },
+    "toto": {
+        "password": "tot",
+        "age": 9,
         "sold": 10
     }
 }
